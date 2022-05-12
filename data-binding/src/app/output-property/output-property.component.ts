@@ -19,17 +19,23 @@ export class OutputPropertyComponent {
 
   @Output() mudouValor: any = new EventEmitter();
 
-  @ViewChild('campoInput') campoValorInput: HTMLElement = new HTMLElement();
+
 
   constructor() {}
 
   incrementa() {
-    console.log(this.campoValorInput);
+    
     this.valor++;
     this.mudouValor.emit({ novoValor: this.valor });
   }
 
   decrementa() {
-    this.valor--;
+    if (this.valor > 0 ){
+      this.valor--;
+      this.mudouValor.emit({novoValor: this.valor})
+    }
+    else{
+      alert('Não é aceito números negativos')
+    }
   }
 }

@@ -1,7 +1,5 @@
-<p fundoAmarelo>
-    Texto com fundo amarelo!
+<h5 ngElseDirective>*ngIF</h5>
 
-</p>
-<p highlightMouse>
-    Texto com highlight ao passar mouse
-</p>
+<div *ngIf="mostrarCursos">Lista de cursos aqui.</div>
+<div *ngElse="mostrarCursos">Não existem cursos para serem listados</div>
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>

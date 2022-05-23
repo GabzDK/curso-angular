@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { ExemploPipesComponent } from './exemplo-pipes/exemplo-pipes.component';
 import { CamelCasePipe } from './camel-case.pipe';
 import { SettingsService } from './settings.service';
+  import ptBr from '@angular/common/locales/pt';
+  import { registerLocaleData } from '@angular/common';
+  registerLocaleData(ptBr)
 
 @NgModule({
   declarations: [

@@ -1,10 +1,14 @@
 <h1>Exemplo de pipes</h1>
 
-<p>Titulo: {{ livro.titulo | camelCase}}</p>
+<p>Titulo: {{ livro.titulo | camelCase }}</p>
 <p>Estrelas: {{ livro.rating | number}}</p>
 <p>Paginas: {{ livro.numeroPaginas | number}}</p>
-<p>Preço: {{ livro.preco | currency:'BRL':true}}</p>
+<p>Preço: {{ livro.preco | currency : 'BRL' : true}}</p>
 <p>Data Lancamento: {{ livro.dataLancamento | date }}</p>
 <p>Url: {{ livro.url }}</p>
 <br>
 <p>Livro: {{livro | json}}</p>
+
+
+
+<p> {{ valorAsync | async }} </p>

@@ -33,19 +33,16 @@
     <nav class="navbar bg-light">
       <ul style="list-style: none">
         <li>
+          <input #idCurso placeholder="Insira o ID"> 
           <button class="nav-item">
             <a  [routerLink]="['curso', idCurso.value]" class="nav-link">Confirmar</a>
           </button>
-          <input #idCurso placeholder="Insira o ID"> 
         </li>
-
-
-      </ul>
+        </ul>
       
       
     </nav>
   </div>
-
 <router-outlet></router-outlet>
 </body>
 </html>
